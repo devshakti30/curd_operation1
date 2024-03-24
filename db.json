@@ -1,0 +1,26 @@
+{
+  "posts": [
+    {
+      "id": 3,
+      "Name": "Arun",
+      "Designation": "Developer",
+      "Salary": "21000"
+    },
+    {
+      "id": 4,
+      "Name": "Divya",
+      "Designation": "Developer",
+      "Salary": "27000"
+    },
+    {
+      "id": 7,
+      "Name": "Akash",
+      "Designation": "Manager",
+      "Salary": "50000"
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}
