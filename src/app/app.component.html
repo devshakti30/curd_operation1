@@ -1,0 +1,72 @@
+
+  
+<div class="container">
+  <h5>Angular curd operation</h5><br>
+  <div class="row">
+    <div class="col">
+      <div class="shadow-lg p-3 mb-5 bg-body rounded">
+        <form [formGroup]="formValue">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="Name" formControlName="Name" class="form-control" id="name" placeholder=""
+              ng-model="newContact.name">
+          </div>
+
+
+          <div class="form-group">
+            <label for="disabledSelect" class="form-label">Designation</label>
+            <select id="Designation" formControlName="Designation" class="form-select" ng-modal="newContact.desig">
+              <option>Manager</option>
+              <option>IT Manager</option>
+              <option>Developer</option>
+            </select>
+
+            <div class="form-group">
+              <label for="salary">Salary</label>
+              <input type="email" formControlName="Salary" class="form-control" id="salary" placeholder=""
+                ng-model="newContact.salary">
+            </div>
+          </div><br>
+
+          <button type="button" id="cancle" class="btn btn-light mx-5">Reset</button>
+
+          <button type="button" (click)="postEmployeeDetails()" class="btn btn-warning mx-5">Save</button>
+
+
+        </form>
+      </div>
+    </div>
+
+
+
+    <div class="col scrollspy">
+      <div class="shadow-lg p-3 mb-5 bg-body rounded">
+        <table class="table" id="display">
+          <thead class="thead">
+            <tr class="table-secondary">
+              <th scope="col">Name</th>
+              <th scope="col">Designation</th>
+              <th scope="col">Salary</th>
+              <th scope="col">Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let row of employeeData">
+              <td>{{row.Name}}</td>
+              <td>{{row.Designation}}</td>
+              <td>{{row.Salary}}</td>
+              <td>
+                <i class="fa fa-edit" style="font-size:26px" (click)="onEdit(row)"></i>&nbsp;&nbsp;
+
+
+
+                <i class="fa fa-trash" style="font-size:26px" (click)="deleteEmployee(row)"></i>
+
+
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>

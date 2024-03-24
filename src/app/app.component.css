@@ -1,0 +1,28 @@
+.title h1{
+    color: rgb(225, 110, 21);
+    padding:  0px 0px 0px 100px;
+ }
+
+
+
+.container{
+  background-color: #b1bcc647;
+  padding: 50px;
+  
+}
+
+.input{
+  background-color: rgb(253, 253, 253);
+  box-shadow: 5px 10px #fffefe;
+}
+
+.btn btn-outline-lighttn1{
+    color: #e5981347;
+}
+
+.btn2{
+    padding-left: 100px;
+}
+
+
+ 
